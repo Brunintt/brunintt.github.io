@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="utf-8">
+	<title>NC | Form</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+	<link rel="shortcut icon" href="img/logomanipulacao4.svg">
+	<link rel="stylesheet" href="estilo.css">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row" align="center">		
+			<div class="col-md-2" style="background: #34495e;"><a href="home_en.html"><img id="logo" src="img/logomanipulacao4.svg" height="80px"></a></div>
+			<div class="col-md-6" style="background: #34495e;">
+				<nav>
+				    <a href="home_en.html">Home</a>
+				    <a href="podcast_en.html">Podcast</a>
+				    <a href="indicacoes_en.html">Indications</a>
+				    <a href="formulario_en.html">Form</a>
+				    <a href="tabela_en.html">Table</a>
+				    <a href="contatos_en.html">Contacts</a>
+				    <div class="animation start-formulario"></div>
+			    </nav>
+			</div>
+			<div class="col-md-3" style="background: #34495e;">
+				<div class="search-box" align="center">
+					<input type="text" class="search-txt" placeholder="Find here..." name="">
+					<a href="#" class="search-btn">
+						<i class="fa fa-search" aria-hidden="true"></i>
+					</a>
+				</div>
+			</div>	
+			<div class="col-md-1" style="background: #34495e;">
+                <a title="PT-BR" href="formulario_br.html"><img class="iconidioma" src="img/brasil.svg" height="26px"></a>
+				<a title="EN-US" href="formulario_en.html"><img class="iconidioma" src="img/eua.svg" height="26px"></a>
+				<a title="ES-ES" href="formulario_es.html"><img class="iconidioma" src="img/spain.svg" height="26px"></a>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col-md-3" style="background: white;"></div>
+			<div class="col-md-6" style="background: #cc1100;">
+
+                <div id="headerform" align="center">
+                    <h1 id="tituloform"><strong>Mass Manipulation</strong></h1>
+                    <p class="subtituloform">Mass manipulation is thought out and strategized by small groups of the world's “elite”.</p>
+                    <p id="fraseform">“Who controls the past, controls the future; who controls the present, controls the past.” - George Orwell, 1984</p>
+
+                    <p class="subtituloform">This research aims to raise responses on the topic, for academic purposes!</p>
+                </div>
+
+				<form>
+                    <div class="campo">
+                        <label><strong>Social Name</strong></label><br>
+                        <input type="text" name="nome" class="inputform" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for=""><strong>Age group</strong></label><br>
+                        <input type="radio" name="age" value="1">10-15;<br>
+                        <input type="radio" name="age" value="2">16-20;<br>
+                        <input type="radio" name="age" value="3">21-30;<br>
+                        <input type="radio" name="age" value="4">31-40;<br>
+                        <input type="radio" name="age" value="5">41-60;<br>
+                        <input type="radio" name="age" value="6">61+;
+                    </div>
+
+                    <div class="campo">
+                        <label for=""><strong>How much knowledge do you have on this topic?</strong></label><br>
+                        <label for="">Little<input type="radio" name="conhecimento" value="1">1</label>
+                        <label for=""><input type="radio" name="conhecimento" value="2">2</label>
+                        <label for=""><input type="radio" name="conhecimento" value="3">3</label>
+                        <label for=""><input type="radio" name="conhecimento" value="4">4</label>
+                        <label for=""><input type="radio" name="conhecimento" value="5">5</label>
+                        <label for="">Very</label>
+                    </div>
+
+                    <div class="campo">
+                        <label><strong>What is your understanding of manipulation? Check what you believe is correct.</strong></label><br>
+                        <input type="checkbox" name="option1" value="">
+                        <label>To manipulate is to be able to convince people with your beliefs;</label><br>
+                        <input type="checkbox" name="option2" value="">
+                        <label>To manipulate is to influence someone to do or act in a certain way;</label><br>
+                        <input type="checkbox" name="option3" value="">
+                        <label>Someone manageable believes everything they hear;</label><br>
+                        <input type="checkbox" name="option4" value="">
+                        <label>Other:</label><input type="text" class="inputform">
+                    </div>
+
+                    <div class="campo">
+                        <label><strong>Where do you usually get information?</strong></label><br>
+                        <input type="checkbox">
+                        <label>Social networks;</label><br>
+                        <input type="checkbox">
+                        <label>Printed newspapers;</label><br>
+                        <input type="checkbox">
+                        <label>Digital newspapers;</label><br>
+                        <input type="checkbox">
+                        <label>Television;</label><br>
+                        <input type="checkbox">
+                        <label>Radio;</label><br>
+                        <input type="checkbox">
+                        <label>Other: </label><input type="text" class="inputform">
+                    </div>
+
+                    <div class="campo">
+                        <label for=""><strong>Do you think Brazil has been or is affected by mass manipulation?</strong></label><br>
+                        <input type="radio" name="mm" value="1">yes, until today;<br>
+                        <input type="radio" name="mm" value="2">It has been affected but it's not anymore;<br>
+                        <input type="radio" name="mm" value="3">It wasn't, but nowadays it is;<br>
+                        <input type="radio" name="mm" value="4">It was never affected.<br>
+                    </div>
+
+                    <div class="campo">
+                        <label for=""><strong>Do you think the media can contribute to mass manipulation?</strong></label><br>
+                        <input type="radio" name="kk" value="1">Yes<br>
+                        <input type="radio" name="kk" value="2">No<br>
+                        <input type="radio" name="kk" value="3">Sometimes<br>
+                    </div>
+
+                    <div class="campo">
+                        <label for=""><strong>Do you think your opinions and positions are influenced or manipulated by the media?</strong></label><br>
+                        <input type="radio" name="hh" value="1">Yes<br>
+                        <input type="radio" name="hh" value="2">No<br>
+                    </div>
+
+                    <div class="campo">
+                        <label for=""><strong>Do you have access to research sites or platforms?</strong></label><br>
+                        <input type="radio" name="jj" value="1">Yes<br>
+                        <input type="radio" name="jj" value="2">No<br>
+                    </div>
+
+                    <div class="campo">
+                        <label for=""><strong>Do you make sure the information on the subject covered is true before sharing?</strong></label><br>
+                        <input type="radio" name="yy" value="1">Ever<br>
+                        <input type="radio" name="yy" value="2">Never<br>
+                        <input type="radio" name="yy" value="3">Sometimes<br>
+                    </div>
+
+                    <div class="campo">
+                        <label for=""><strong>Would you be interested in a website on the topic covered in the survey?</strong></label><br>
+                        <input type="radio" name="ww" value="1">Yes<br>
+                        <input type="radio" name="ww" value="2">No<br>
+                    </div>
+			</div>
+            
+			<div class="col-md-3" style="background: white;"></div>
+		</div>	
+
+        <div class="row" align="center">
+            <div class="col-md-3" style="background: white;"></div>
+            <div class="col-md-6" style="background: white;" align="center">
+                <button id="enviar" type="submit">Submit</button>
+		        <button id="limpar" type="reset">Reset</button><br><br>
+                </form>
+            </div>
+            <div class="col-md-3" style="background: white;"></div>
+        </div>
+
+		<div class="row" align="center">
+			<div class="col-md-1" style="background: #222f3e;"></div>
+			<div class="col-md-3" style="background: #222f3e;" align="center">
+				<p id="titlerodape">About Us</p>
+				<p id="txtrodape">We are in the first year of high school integrated with systems development.<br><br> 
+
+                    We made this site academically and thought to inform people who want to know about mass manipulations and media. </p>
+			</div>
+			<div class="col-md-4" style="background: #222f3e;" align="center">
+				<div class="social-menu">
+					<ul>
+						<li><a title="Twitter" href="https://www.twitter.com"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+						<li><a title="Instagram" href="https://www.instagram.com"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+						<li><a title="Facebook" href="https://www.facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+						<li><a title="YouTube" href="https://youtube.com/channel/UCkhK0zjsTd8frtZV3fXEC8A"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+					</ul>
+				</div>
+				<a href="#" class="links">Information</a>
+				<a href="#" class="bolinha">•</a>
+				<a href="#" class="links">Support</a>
+				<a href="#" class="bolinha">•</a>
+				<a href="#" class="links">Marketing</a><br>
+				<a href="#" class="links">Terms of Use</a>
+				<a href="#" class="bolinha">•</a>
+				<a href="#" class="links">Privacy Policy</a>
+				
+				<pre id="copyright">© 2021 No Controle</pre>
+			</div>
+			<div class="col-md-3" style="background: #222f3e;" align="center">
+				<p id="titlerodape">Entrar em Contato</p>
+				<p class="iconcontato"><i class="fa fa-envelope" aria-hidden="true"></i>   contato@nocontrole.com.br</p>
+				<p class="iconcontato"><i class="fa fa-phone" aria-hidden="true"></i>     0800-534 1635</p>
+				<p class="iconcontato"><i class="fa fa-map-marker" aria-hidden="true"></i>     R. Ulisses Cruz, 85 - Belenzinho<br>São Paulo - SP - CEP 03077-000</p>
+			</div>
+			<div class="col-md-1" style="background: #222f3e;"></div>
+        </div>
+	</div>
+</body>
+</html>
