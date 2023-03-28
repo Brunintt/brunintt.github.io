@@ -1,0 +1,507 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:wght@700&family=Roboto:wght@300;400;700&display=swap');
+    body{
+        font-family: 'Roboto', sans-serif;
+    }
+	a{
+		user-select: none;
+	}
+	br{
+		user-select: none;
+	}
+	pre{
+		font-family: 'Roboto', sans-serif;
+	}
+	/*Menu Nav*/
+	nav{
+		position: relative;
+		margin-top: 15px;
+		width: 580px;
+		height: 50px;
+		background: #34495e;
+		border-radius: 8px;
+		font-size: 0;
+		/*box-shadow: 0 2px 3px 0 rgba(0,0,0,.1);*/
+	}
+	nav a{
+		font-size: 15px;
+		text-transform: uppercase;
+		color: white;
+		text-decoration: none;
+		line-height: 50px;
+		position: relative;
+		z-index: 1;
+		display: inline-block;
+		text-align: center;
+	}
+	nav .animation{
+		position: absolute;
+		color: white;
+		height: 5px;
+		bottom: 0;
+		z-index: 0;
+		background: #cc1100;
+		border-radius: 8px;
+		transition: all .5s ease 0s;
+	}
+	nav a:nth-child(1){
+		width: 80px;
+		color: white;
+	}
+	nav .start-home, a:nth-child(1):hover~.animation{
+		width: 80px;
+		left: 0;
+	}
+	nav .start-podcast, a:nth-child(2):hover~.animation{
+		width: 80px;
+		left: 85px;
+	}
+	nav .start-indicacoes, a:nth-child(3):hover~.animation{
+		width: 110px;
+		left: 170px;
+	}
+	nav .start-formulario, a:nth-child(4):hover~.animation{
+		width: 110px;
+		left: 285px;
+	}
+	nav .start-tabela, a:nth-child(5):hover~.animation{
+		width: 75px;
+		left: 400px;
+	}
+	nav .start-contatos, a:nth-child(6):hover~.animation{
+		width: 100px;
+		left: 475px;
+	}
+	nav a:nth-child(2){
+		width: 80px;
+		color: white;
+	}
+	nav a:nth-child(2):hover~.animation{
+		width: 90px;
+		left: 80px;
+	}
+	nav a:nth-child(3){
+		width: 120px;
+		color: white;
+	}
+	nav a:nth-child(3):hover~.animation{
+		width: 110px;
+		left: 170px;
+	}
+	nav a:nth-child(4){
+		width: 110px;
+		color: white;
+	}
+	nav a:nth-child(4):hover~.animation{
+		width: 118px;
+		left: 280px;
+	}
+	nav a:nth-child(5){
+		width: 80px;
+		color: white;
+	}
+	nav a:nth-child(5):hover~.animation{
+		width: 75px;
+		left: 400px;
+	}
+	nav a:nth-child(6){
+		width: 100px;
+		color: white;
+	}
+	nav a:nth-child(6):hover~.animation{
+		width: 105px;
+		left: 475px;
+	}
+
+
+	/*Barra de Pesquisa*/
+		.search-box{
+			background: #fff;
+			height: 45px;
+			width: 300px;
+			border-radius: 40px;
+			padding: 5px;
+			margin-top: 20px;
+		}
+		.search-btn{
+			color: white;
+			float: right;
+			height: 35px;
+			width: 35px;
+			background: #d63031;
+			border-radius: 50%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			text-decoration: none;
+		}
+		.search-btn:hover{
+			background: #ee8181;
+		}
+		.search-btn i{
+			font-size: 18px;
+			margin-top: -1px;
+			margin-right: 2px;
+		}
+		.search-txt{
+			border: none;
+			background: none;
+			outline: none;
+			float: left;
+			font-size: 16px;
+			line-height: 32px;
+			color: black;
+			width: 240px;
+			padding: 0 6px;
+		}
+		.search-box:hover > .search-btn i{
+			color: white;
+		}
+
+
+		/*Ícones de troca de idioma*/
+		.iconidioma{
+			margin-top: 32px;
+		}
+		
+
+		/*Textos*/
+		h1{
+			margin-top: 12px;
+			font-family: 'Fira Sans Extra Condensed', sans-serif;
+		}
+		h2{
+			font-family: 'Fira Sans Extra Condensed', sans-serif;
+		}
+		h4{
+			margin-top: 25px;
+			font-family: 'Roboto', sans-serif;
+		}
+		#logo{
+			margin-top: 0px;
+			user-select: none;
+		}
+		p{
+			text-align: justify;
+			font-size: 20px;
+		}
+
+
+		/*Introdução ao Artigo*/
+		#imgartigo{
+			margin-top: 10px;
+			margin-left: 10px;
+			margin-bottom: 10px;
+		}
+		#titleartigo{
+			padding-top: 50px;
+			font-size: 35px;
+			color: white;
+			text-align: left;
+		}
+		#subtitleartigo{
+			font-size: 16px;
+			color: white;
+			text-align: left;
+		}
+
+
+		/*Cards de anúncio*/
+		.content{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			align-content: center;
+			width: 100%;
+		}
+		.card{
+			background: #fff;
+			border-radius: 20px;
+			box-shadow: 0px 2px 23px #26395338;
+			width: 400px;
+		}
+		#mediacard1{
+			background: url("https://veja.abril.com.br/wp-content/uploads/2021/07/000_9ER37Y.jpg.jpg?quality=70&strip=info&resize=680,453") center/cover;
+			background-position: center;
+			height: 200px;
+			width: 100%;
+			border-top-left-radius: 20px;
+			border-top-right-radius: 20px;
+			margin-top: -20px;
+			margin-bottom: 10px;
+		}
+		#mediacard2{
+			background: url("https://veja.abril.com.br/wp-content/uploads/2021/04/GettyImages-170983527.jpg.jpg?quality=70&strip=info&resize=680,453") center/cover;
+			height: 200px;
+			width: 100%;
+			border-top-left-radius: 20px;
+			border-top-right-radius: 20px;
+			margin-top: -20px;
+			margin-bottom: 10px;
+		}
+		#mediacard3{
+			background: url("https://mega.ibxk.com.br/2021/10/21/21141446076292.jpg") center/cover;
+			height: 200px;
+			width: 100%;
+			border-top-left-radius: 20px;
+			border-top-right-radius: 20px;
+			margin-top: -20px;
+			margin-bottom: 10px;
+		}
+		#mediacard4{
+			background: url("https://i.pinimg.com/originals/96/d7/a8/96d7a8f077f733166a11d73abc9bb00d.jpg") center/cover;
+			height: 200px;
+			width: 100%;
+			border-top-left-radius: 20px;
+			border-top-right-radius: 20px;
+			margin-top: -20px;
+			margin-bottom: 10px;
+		}
+		#mediacard5{
+			background: url("https://veja.abril.com.br/wp-content/uploads/2021/09/O-DESCUBRIMENTO-DE-AMERICA-DIASCORO-PUEBLA.jpg.jpg?quality=70&strip=info&resize=680,453") center/cover;
+			height: 200px;
+			width: 100%;
+			border-top-left-radius: 20px;
+			border-top-right-radius: 20px;
+			margin-top: -20px;
+			margin-bottom: 10px;
+		}
+		#mediacard6{
+			background: url("https://veja.abril.com.br/wp-content/uploads/2021/04/NMEC-4873043b040b3e586a054e3950ef50d9f3591c71.jpg.jpg?quality=70&strip=info&resize=680,453") center/cover;
+			height: 200px;
+			width: 100%;
+			border-top-left-radius: 20px;
+			border-top-right-radius: 20px;
+			margin-top: -20px;
+			margin-bottom: 10px;
+		}
+		#mediacard7{
+			background: url("https://www.cartacapital.com.br/wp-content/uploads/2019/03/Ditadura-Flickr.jpg") center/cover;
+			height: 200px;
+			width: 100%;
+			border-top-left-radius: 20px;
+			border-top-right-radius: 20px;
+			margin-top: -20px;
+			margin-bottom: 10px;
+		}
+		#mediacard8{
+			background: url("https://www.revistaplaneta.com.br/wp-content/uploads/sites/3/2021/05/istock-1158595747.jpg") center/cover;
+			height: 200px;
+			width: 100%;
+			border-top-left-radius: 20px;
+			border-top-right-radius: 20px;
+			margin-top: -20px;
+			margin-bottom: 10px;
+		}
+		#mediacard9{
+			background: url("https://veja.abril.com.br/wp-content/uploads/2021/09/eeee.jpg?quality=70&strip=info&resize=680,453") center/cover;
+			height: 200px;
+			width: 100%;
+			border-top-left-radius: 20px;
+			border-top-right-radius: 20px;
+			margin-top: -20px;
+			margin-bottom: 10px;
+		}
+		#mediacard10{
+			background: url("https://veja.abril.com.br/wp-content/uploads/2021/10/CONSTITUIC%CC%A7AO-EUA-1787.jpg.jpg?quality=70&strip=info&resize=680,453") center/cover;
+			height: 200px;
+			width: 100%;
+			border-top-left-radius: 20px;
+			border-top-right-radius: 20px;
+			margin-top: -20px;
+			margin-bottom: 10px;
+		}
+		.topcard{
+			padding: 20px;
+			padding-top: 0px;
+			font-family: 'Roboto', sans-serif;
+		}
+		.title{
+			font-family: 'Roboto', sans-serif;
+			color: black;
+		}
+		.secondtext{
+			color: #828fa1;
+			font-family: 'Roboto', sans-serif;
+		}
+		.bottomcard{
+			padding: 20px;
+			padding-top: 0px;
+		}
+		.linktitle{
+			text-decoration: none;
+		}
+        
+
+        /*Formulário*/
+        .subtituloform{
+            font-size: 18px;
+
+        }
+        #fraseform{
+            color: #dc0404;
+            font-size: 23px;
+        }
+        fieldset{
+            border: 0;
+        }
+        .inputname{
+            border-radius: 7px;
+        }
+		.inputform{
+            border-radius: 7px;
+			margin-left: 10px;
+        }
+        .inputform:focus{
+            background: #f1dada;
+            border: 0;
+        }
+        #enviar {
+            font-size: 18px;
+            background: #e60909;
+            border: 0;
+            color: #ffffff;
+            padding: 5px 10px;
+            box-shadow: 3px 3px 3px #1d1919;
+            margin-top: 10px;
+        }
+        #enviar:hover {
+            background: #ee8181;
+        }
+        #limpar {
+            font-size: 18px;
+            background: #e60909;
+            border: 0;
+            color: #ffffff;
+            padding: 5px 10px;
+            box-shadow: 3px 3px 3px #1d1919;
+            margin-top: 10px;
+        }
+        #limpar:hover {
+            background: #ee8181;
+        }
+        #headerform{
+            background-color: #e8ebf0;
+            border-radius: 7px;
+            padding: 15px;
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+        .campo{
+            background-color: #e8ebf0;
+            border-radius: 7px;
+            padding: 15px;
+            margin-bottom: 10px;
+        }
+
+
+		/*Tabela*/
+        table, th, td{
+        	border: 1px solid white;
+			text-align: center;
+			border-collapse: collapse;
+        }
+        th{
+			background-color: #cc1100;
+			color: white;
+		}
+		td{
+			background-color: #292929; 
+			padding:10px;
+			color: white;
+		}
+		
+
+		/*Rodapé*/
+		#logorodape{
+			margin-top: 25px;
+		}
+		.links{
+			color: white;
+			text-decoration: none;
+		}
+		.links:hover{
+			color: #cc1100;
+			text-decoration: none;
+		}
+		.bolinha{
+			color: white;
+			text-decoration: none;
+		}
+		.bolinha:hover{
+			color: white;
+			text-decoration: none;
+		}
+		#copyright{
+			color: lightslategray;
+			font-family: 'Roboto', sans-serif;
+			margin-top: 22px;
+		}
+		#titlerodape{
+			color: white;
+			margin-top: 45px;
+		}
+		#txtrodape{
+			color: white;
+			font-size: 15px;
+		}
+		.iconcontato{
+			color: white;
+			font-size: 15px;
+			font-family: 'Roboto', sans-serif;
+		}
+
+
+		/*Botões Redes Sociais*/
+		.social-menu ul{
+			top: 50%;
+			left: 50%;
+			padding: 0;
+			margin: 0;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin-top: 45px;
+			margin-bottom: 45px;
+		}
+		.social-menu ul li{
+			list-style: none;
+			margin: 0 15px;
+		}
+		.social-menu ul li .fa{
+			font-size: 30px;
+			line-height: 60px;
+			transition: .6s;
+			color: #fff;
+		}
+		.social-menu ul li .fa:hover{
+			color: #fff;
+		}
+		.social-menu ul li a{
+			display: block;
+			width: 60px;
+			height: 60px;
+			border-radius: 50%;
+			background-color: #000;
+			text-align: center;
+			transition: .10s;
+			box-shadow: 0 5px 4px rgba(0, 0, 0, .5);
+		}
+		.social-menu ul li a:hover{
+			transform: translate(0, -10px);
+		}
+		.social-menu ul li:nth-child(1) a:hover{
+			background-color: #55acee;
+		}
+		.social-menu ul li:nth-child(2) a:hover{
+			background-color: #e4405f;
+		}
+		.social-menu ul li:nth-child(3) a:hover{
+			background-color: #3b5999;
+		}
+		.social-menu ul li:nth-child(4) a:hover{
+			background-color: #CD201F;
+		}
+		.social-menu ul li:nth-child(5) a:hover{
+			background-color: #0088cc;
+		}
